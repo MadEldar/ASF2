@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignment01.ProductList">
+   <children>
+       <TableView fx:id="tbView" layoutX="35.0" layoutY="14.0" prefHeight="347.0" prefWidth="580.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+           <columns>
+               <TableColumn fx:id="idCol" prefWidth="44.0" text="Id" />
+               <TableColumn fx:id="nameCol" minWidth="0.0" prefWidth="370.0" text="Product name" />
+               <TableColumn fx:id="priceCol" prefWidth="84.0" text="Price" />
+               <TableColumn fx:id="quantityCol" text="Quantity" />
+           </columns>
+       </TableView>
+       <Text layoutX="29.0" layoutY="378.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sort by:" />
+       <Button onAction="#sortByName" layoutX="90.0" layoutY="361.0" mnemonicParsing="false" text="Name" />
+       <Button onAction="#sortByPrice" layoutX="155.0" layoutY="361.0" mnemonicParsing="false" text="Price" />
+       <Button onAction="#sortByQuantity" layoutX="220.0" layoutY="361.0" mnemonicParsing="false" text="Quantity" />
+   </children>
+</AnchorPane>
