@@ -1,5 +1,6 @@
 package assignment03;
 
+import javafx.application.Platform;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
@@ -39,6 +40,7 @@ public class Timer implements Initializable {
                     }
                 }
             }
+            Platform.exit();
         };
         btn.setDisable(true);
         Thread t = new Thread(r);
