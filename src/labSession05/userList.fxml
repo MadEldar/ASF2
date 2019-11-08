@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+      prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="labSession05.UserList">
+    <AnchorPane prefHeight="400.0" prefWidth="600.0">
+        <TableView fx:id="tableView" prefHeight="306.0" prefWidth="550.0" AnchorPane.bottomAnchor="69.0"
+                   AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="25.0">
+            <columns>
+                <TableColumn fx:id="id" prefWidth="137.0" text="Full Name"/>
+                <TableColumn fx:id="name" prefWidth="137.0" text="Email"/>
+                <TableColumn fx:id="age" prefWidth="137.0" text="Age"/>
+                <TableColumn fx:id="mark" prefWidth="137.0" text="Address"/>
+            </columns>
+        </TableView>
+    </AnchorPane>
+</Pane>
