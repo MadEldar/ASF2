@@ -1,10 +1,15 @@
 package labSession05;
 
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -24,5 +29,13 @@ public class UserList implements Initializable {
         mark.setCellValueFactory(new PropertyValueFactory<>("mark"));
 
         tableView.setItems(Main.list);
+    }
+
+    public void addNew() throws IOException {
+        Stage newStage = new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource("newUser.fxml"));
+        newStage.setTitle("Add new user");
+        newStage.setScene(new Scene(root, 400, 250));
+        newStage.show();
     }
 }

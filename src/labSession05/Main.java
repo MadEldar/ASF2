@@ -23,7 +23,7 @@ public class Main extends Application {
 
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
         Class.forName("com.mysql.jdbc.Driver");
-        String url = "jdbc:mysql://localhost:3306/myDatabase";
+        String url = "jdbc:mysql://localhost:3306/scratch";
         String username = "root";
         String password = "";
         Connection cnt = DriverManager.getConnection(url, username, password);
@@ -41,6 +41,7 @@ public class Main extends Application {
                     rs.getInt("age"),
                     rs.getInt("mark")
             ));
+            System.out.println();
         }
         launch(args);
     }

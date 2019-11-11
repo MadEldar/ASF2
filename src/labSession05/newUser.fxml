@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="250.0" prefWidth="399.0" xmlns="http://javafx.com/javafx/8"
+            fx:controller="labSession05.NewUser">
+    <children>
+        <TextField fx:id="nameField" layoutX="107.0" layoutY="49.0" prefHeight="25.0" prefWidth="240.0"/>
+        <TextField fx:id="ageField" layoutX="107.0" layoutY="100.0" prefHeight="25.0" prefWidth="240.0"/>
+        <TextField fx:id="markField" layoutX="107.0" layoutY="154.0" prefHeight="25.0" prefWidth="240.0"/>
+        <Text layoutX="38.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name"
+              AnchorPane.leftAnchor="35.0"/>
+        <Text layoutX="38.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age"
+              AnchorPane.leftAnchor="35.0"/>
+        <Text layoutX="35.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mark"
+              AnchorPane.leftAnchor="35.0"/>
+        <Button onAction="#addToList" layoutX="154.0" layoutY="199.0" mnemonicParsing="false" text="Add"/>
+        <Button layoutX="247.0" layoutY="199.0" mnemonicParsing="false" text="Cancel"/>
+    </children>
+</AnchorPane>

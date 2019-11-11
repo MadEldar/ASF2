@@ -1,6 +1,7 @@
 package labSession05;
 
 public class User {
+    private static Integer idDefault = 0;
     private Integer id;
     private String name;
     private Integer age;
@@ -10,6 +11,14 @@ public class User {
 
     public User(Integer id, String name, Integer age, Integer mark) {
         setId(id);
+        ++User.idDefault;
+        setName(name);
+        setAge(age);
+        setMark(mark);
+    }
+
+    public User(String name, Integer age, Integer mark) {
+        setId(++User.idDefault);
         setName(name);
         setAge(age);
         setMark(mark);
