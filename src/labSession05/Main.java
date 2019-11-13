@@ -12,21 +12,14 @@ import java.sql.*;
 
 public class Main extends Application {
     static ObservableList<User> list = FXCollections.observableArrayList();
-
-    @Override
-    public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("userList.fxml"));
-        primaryStage.setTitle("Hell World");
-        primaryStage.setScene(new Scene(root, 600, 400));
-        primaryStage.show();
-    }
+    static Connection cnt;
 
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
         Class.forName("com.mysql.jdbc.Driver");
         String url = "jdbc:mysql://localhost:3306/scratch";
         String username = "root";
         String password = "";
-        Connection cnt = DriverManager.getConnection(url, username, password);
+        cnt = DriverManager.getConnection(url, username, password);
 
         Statement stm = cnt.createStatement();
 
@@ -44,5 +37,13 @@ public class Main extends Application {
             System.out.println();
         }
         launch(args);
+    }
+
+    @Override
+    public void start(Stage primaryStage) throws Exception {
+        Parent root = FXMLLoader.load(getClass().getResource("userList.fxml"));
+        primaryStage.setTitle("Hell World");
+        primaryStage.setScene(new Scene(root, 600, 400));
+        primaryStage.show();
     }
 }
