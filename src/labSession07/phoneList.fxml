@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 <Pane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
       prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8"
-      fx:controller="labSession06.phoneList">
+      fx:controller="labSession07.phoneList">
     <AnchorPane prefHeight="400.0" prefWidth="600.0">
         <TableView fx:id="tableView" prefHeight="306.0" prefWidth="550.0" AnchorPane.bottomAnchor="69.0"
                    AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="25.0">
