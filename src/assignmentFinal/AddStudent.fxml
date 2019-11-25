@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="300.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/8"
+            fx:controller="assignmentFinal.AddStudent">
+    <TextField fx:id="textID" layoutX="87.0" layoutY="30.0"/>
+    <TextField fx:id="textName" layoutX="87.0" layoutY="90.0"/>
+    <TextField fx:id="textAddress" layoutX="87.0" layoutY="150.0"/>
+    <TextField fx:id="textPhone" layoutX="87.0" layoutY="208.0"/>
+    <Text layoutX="22.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id"/>
+    <Text layoutX="22.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name"/>
+    <Text layoutX="22.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address"/>
+    <Text layoutX="21.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone"/>
+    <Button onAction="#addStudent" layoutX="43.0" layoutY="253.0" mnemonicParsing="false" text="Add"/>
+    <Button onAction="#cancel" layoutX="142.0" layoutY="253.0" mnemonicParsing="false" text="Cancel"/>
+</AnchorPane>
