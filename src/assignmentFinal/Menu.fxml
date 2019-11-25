@@ -10,8 +10,8 @@
     <Button onAction="#addStudent" layoutX="90.0" layoutY="72.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" text="Add"/>
     <Button onAction="#displayList" layoutX="90.0" layoutY="125.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0"
             text="Display"/>
-    <Button layoutX="90.0" layoutY="184.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" text="Save"/>
-    <Button layoutX="90.0" layoutY="240.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" text="Exit"/>
+    <Button onAction="#saveList" layoutX="90.0" layoutY="184.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" text="Save"/>
+    <Button onAction="#exit" layoutX="90.0" layoutY="240.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" text="Exit"/>
     <Text layoutX="98.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Menu">
         <font>
             <Font name="System Bold" size="20.0"/>

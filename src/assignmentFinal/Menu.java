@@ -43,7 +43,10 @@ public class Menu implements Initializable {
             } catch (IOException e){
                 System.out.println(e.getMessage());
             }
-
         }
+    }
+
+    public void exit() {
+        Main.mainStage.close();
     }
 }
